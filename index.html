@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX - Animated Login with Floating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form Section -->
+        <div class="login-container" id="loginContainer">
+            <div class="login-box">
+                <div class="logo">
+                    <h1>ALEX</h1>
+                </div>
+                
+                <form id="loginForm" class="form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                        >
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password" 
+                            required
+                        >
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+
+                    <button type="submit" class="btn-login">
+                        <span class="button-text">Login</span>
+                        <span class="spinner"></span>
+                    </button>
+                </form>
+
+                <div class="login-footer">
+                    <p>Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Zone After Login -->
+        <div class="floating-zone" id="floatingZone">
+            <div class="floating-container">
+                <div class="welcome-message">
+                    <h2>Welcome to ALEX! 🚀</h2>
+                    <p>You've entered the floating zone</p>
+                </div>
+
+                <div class="floating-objects">
+                    <div class="float-item" id="floatItem1">
+                        <span>✨</span>
+                    </div>
+                    <div class="float-item" id="floatItem2">
+                        <span>🌟</span>
+                    </div>
+                    <div class="float-item" id="floatItem3">
+                        <span>💫</span>
+                    </div>
+                    <div class="float-item" id="floatItem4">
+                        <span>⭐</span>
+                    </div>
+                </div>
+
+                <div class="user-profile">
+                    <div class="avatar"></div>
+                    <h3 id="userName">User</h3>
+                    <p id="userEmail">user@example.com</p>
+                </div>
+
+                <button class="btn-logout" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+        <!-- Particle background -->
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
